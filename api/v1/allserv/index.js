@@ -113,4 +113,21 @@ router.post('/createuser', controller.createuser)
  */
 router.post('/loginuser', controller.loginuser)
 
+/**
+ * @swagger
+ * /api/v1/allserv/getevent:
+ *    get:
+ *      description: 
+ *      produces:
+ *          - application/json
+ *      responses:
+ *        '200':
+ *          description: success
+ *        '400':
+ *          description: unsuccessful
+ *        '500':
+ *          description: internal server error
+ */
+router.get('/getevent', controller.getevent)
+
 module.exports = router
